@@ -1,40 +1,153 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Post</title>
+    <title>Portfolio-BINDUMOL K V, FULL STACK MERN STUDENT OF ENTRI ELEVATE</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f8f9fa; 
+            color: #333; 
+            margin: 0; 
+        }
+        header { 
+            background: #262A2E; 
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center; 
+        }
+        nav { 
+            margin: 20px 0; 
+            text-align: center;
+        }
+        nav a { 
+            color: #262A2E; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-weight: bold;
+        }
+        section { 
+            max-width: 800px; 
+            background: #fff;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 8px; 
+            box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+        }
+        h2 { color: #262A2E; }
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            color: #888;
+            background: #262A2E;
+            margin-top: 40px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .project-card {
+            background: #f4f4f4;
+            border-radius: 6px;
+            padding: 18px;
+            
+            min-width: 200px;
+           
+        }
+    </style>
 </head>
 <body>
-    <header>My Blog</header>
-    <main>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/123994634?v=4" alt="Bindumol KV" width="120" height="120" style="border-radius: 50%;"><br>
+        <h1>Bindumol KV</h1>
+        <p>Web Developer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am working as an office assistant/programmer in an industry in Trivandrum.
+            My native place is Thrissur. I am setlled in Trivandrum. I have developed a payroll web application and an employees utility application in php with mysql.
+            This web application is currently. using in my office.  I did that application by learning everything from youtude. videos only.
+            Now I want to acquire more knowlegde in web application development from Entri Elevate beacuse I don't know some web techniologies whiuch can make the web development more easier and more effective.
+            
+            In our office, I have no access to internet because so I find it very difficult to learn web technologies by myself.
+            Even though I am very old enough to find a job in IT sector, I want to try my luck in this field. I am a very hard working person and I can learn things very quickly.  
+            My age is 53. I have a family to support. So I want to switch my job in IT sector as soon as possible.
+ 
+ 
+        </p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Paytips</h3>
+                <p>Paytips is a web application developed in php with mysql as backend. It is used to calculate the salary of all regular employees in our office.
+                    It also used to compute stipend to apprentices.All mandatory reports are generated as pdf from the program.So it was very easy to use.
+                 </p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>ABC-Connect</h3>
+                <p>It is utility software in our office. Its front end is php and backend is mysql. Also boostrap is used as the library.Some javascript libraries also used.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact details</h2>
+        <p>Email: <a href="mailto:kvbmol.email@example.com">kvbmol.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/kvbmol" target="_blank">My Profile</a></p>
+    
+    </section>
+<section id="contactform">
+        <h2>Let me know a little about you</h2>
+        <form action="" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" maxlength="50"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" maxlength="15"><br><br>
+            <label for="district">District </label><br>
+            <select name="district" id="district" required>
+                <option value="" disabled selected>Select a district</option>
+                <option value="Trivandrum">Trivandrum</option>
+                <option value="Kollam">Kollam</option>
+                <option value="Kottayam">Kottayam</option>
+
+                <option value="Idukki">Idukki</option>
+                <option value="Alappuzha">Alappuzha</option>
+                <option value="Ernakulam">Ernakulam</option>
+                <option value="Thrissur">Thrissur</option>  
+                <option value="Palakkad">Palakkad</option>
+                <option value="Malappuram">Malappuram</option>
+                <option value="Kozhikode">Kozhikode</option>
+                <option value="Wayanad">Wayanad</option>
+                <option value="Kannur">Kannur</option>
+                <option value="Kasargod">Kasargod</option>
+            </select><br><br>
+            <input type="radio" id="status" name="status" value="Student" required>
+            <label for="status">Student</label>
+            <input type="radio" id="status" name="status" value="Employee" required>
         
-        <form action="#" method="post">
-            <input type="text" name="name" id="name" required minlength="3" maxlength="10">
-            <input type="tel" name="phone" id ="phone" pattern="\d{3}-\d{3}-\d{4}"> 
-          <label for="url">Website addfress</label>
-          <input. type="url" name="url" id="url" required>
-            <textarea name="message" id="message" rows="4" cols="50" required></textarea>
-            <br>
-            <label for="subscribe">Subscribe to newsletter</label>
-            <input type="checkbox" name="subscribe" id="subscribe">
-            <select name="category" id="category">
-                <option value="general">General</option>
-                <option value="feedback">Feedback</option>
-                <option value="support">Support</option>
-
-            </select>
-            <br
-            <input type="radio" name="rating" id="good" value="Good" checked>
-            <label for="good">Good</label>
-            <input type="radio" name="rating" id="good" value="Better" checked>
-            <label for="good">Better</label>
-            <input type="radio" name="rating" id="good" value="Best" checked>
-            <label for="good">Best</label>
-            <br
-            <button type="submit">Submit</button>
-        </form>
-
-</main>
+            <label for="status">Employee</label><br><br>
+            <input type="checkbox" id="sharePhone" name="sharePhone" value="yes">
+            <label for="sharePhone">Agree to share your whatsapp number</label><br><br>
+            <label for="phoneNo">Whatsapp number:</label><br>
+            <input type="text" id="phoneNo" name="phoneNo" placeholder="91-" minlength="3" maxlength="13" pattern="\d{2}-\d{10}"><br><br>
+            
+                <label for="message">More about yourself</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Submit">
+    <footer>
+        &copy; 2025 KVB MOL. All Rights Reserved.
+    </footer>
 </body>
 </html>

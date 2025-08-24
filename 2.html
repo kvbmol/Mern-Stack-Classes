@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Post</title>
+</head>
+<body>
+    <header>My Blog</header>
+    <main>
+        
+        <form action="#" method="post">
+            <input type="text" name="name" id="name" required minlength="3" maxlength="10">
+            <input type="tel" name="phone" id ="phone" pattern="\d{3}-\d{3}-\d{4}"> 
+          <label for="url">Website addfress</label>
+          <input. type="url" name="url" id="url" required>
+            <textarea name="message" id="message" rows="4" cols="50" required></textarea>
+            <br>
+            <label for="subscribe">Subscribe to newsletter</label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <select name="category" id="category">
+                <option value="general">General</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Support</option>
+
+            </select>
+            <br
+            <input type="radio" name="rating" id="good" value="Good" checked>
+            <label for="good">Good</label>
+            <input type="radio" name="rating" id="good" value="Better" checked>
+            <label for="good">Better</label>
+            <input type="radio" name="rating" id="good" value="Best" checked>
+            <label for="good">Best</label>
+            <br
+            <button type="submit">Submit</button>
+        </form>
+
+</main>
+</body>
+</html>
